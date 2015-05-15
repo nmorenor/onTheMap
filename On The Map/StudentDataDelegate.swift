@@ -12,6 +12,8 @@ public protocol StudentDataDelegate : StudentDataUpdateDelegate {
     
     func didRefresh(success:Bool, errorString:String?)
     
+    func doRefresh()
+    
     func didLogout()
     
     func doPostData()

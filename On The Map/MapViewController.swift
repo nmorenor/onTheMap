@@ -15,6 +15,7 @@ public class MapViewController: UIViewController, StudentDataDelegate {
     @IBOutlet weak var mapView: MKMapView!
     var tapRecognizer: UITapGestureRecognizer? = nil
     var alertView:OnTheMapAlertViewController?
+    var activityView:OnTheMapActivityViewController?
     
     //MARK: - LifeCycle
     override public func viewDidLoad() {
@@ -72,6 +73,8 @@ public class MapViewController: UIViewController, StudentDataDelegate {
     
     public func didRefresh(success:Bool, errorString:String?) {
         dispatch_async(dispatch_get_main_queue()) {
+            self.activityView?.closeView()
+            self.activityView = nil
             if (success) {
                 self.refreshAnnotations()
             } else {
@@ -95,6 +98,11 @@ public class MapViewController: UIViewController, StudentDataDelegate {
     
     public func didUpdateData(success:Bool, errorString:String?) {
         //do nothings
+    }
+    
+    public func doRefresh() {
+        self.activityView = OnTheMapActivityViewController()
+        self.activityView?.show(self, text: "Processing...")
     }
     
     public func doPostData() {

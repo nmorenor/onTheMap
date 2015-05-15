@@ -51,6 +51,7 @@ extension ParseClient {
     }
     
     public func getStudentLocationsWithDelegate(delegate:StudentDataDelegate) {
+        delegate.doRefresh()
         let studentsSize = OnTheMapNavigationBarHelper.sharedInstance().getStudentsSize()
         self.getStudentLocations(skip) { success, students, errorString in
             if (success) {

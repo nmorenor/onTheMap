@@ -14,6 +14,7 @@ public class FlickerStudentListViewController:UIViewController, StudentDataDeleg
     @IBOutlet weak var tableView: UITableView!
     var alertView:OnTheMapAlertViewController?
     var tapRecognizer: UITapGestureRecognizer? = nil
+    var activityView:OnTheMapActivityViewController?
     
     //MARK: - lifeCycle
     
@@ -57,8 +58,12 @@ public class FlickerStudentListViewController:UIViewController, StudentDataDeleg
     
     public func didRefresh(success:Bool, errorString:String?) {
         dispatch_async(dispatch_get_main_queue()) {
+            self.activityView?.closeView()
+            self.activityView = nil
             if (success) {
                 self.tableView.reloadData()
+            } else {
+                self.setupNewAlert(errorString!, retry: false)
             }
         }
     }
@@ -75,6 +80,11 @@ public class FlickerStudentListViewController:UIViewController, StudentDataDeleg
         if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("OnTheMapPositioning") as? PostingViewController {
             self.presentViewController(viewController, animated: true, completion: nil)
         }
+    }
+    
+    public func doRefresh() {
+        self.activityView = OnTheMapActivityViewController()
+        self.activityView?.show(self, text: "Processing...")
     }
     
     func handleSingleTap(recognizer: UITapGestureRecognizer) {
