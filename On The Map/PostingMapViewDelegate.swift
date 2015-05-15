@@ -13,7 +13,7 @@ import UIKit
 extension PostingViewController: MKMapViewDelegate {
     
     public func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
-        return MKPinAnnotationWrapperView.createAnnotation(mapView, viewForAnnotation: annotation, tapRecognizer: nil)
+        return MKPinAnnotationWrapperView.createAnnotation(self, mapView:mapView, viewForAnnotation: annotation, tapRecognizer: nil)
     }
     
     public func mapView(mapView: MKMapView!, didAddAnnotationViews views: [AnyObject]!) {

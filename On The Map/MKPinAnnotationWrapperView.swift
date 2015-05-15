@@ -14,7 +14,7 @@ class MKPinAnnotationWrapperView: UIView {
     
     var annotation:MKPinAnnotationView!
     
-    class func createAnnotation(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!, tapRecognizer:UITapGestureRecognizer?) -> MKPinAnnotationView? {
+    class func createAnnotation(target:UIViewController, mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!, tapRecognizer:UITapGestureRecognizer?) -> MKPinAnnotationView? {
         if let annotation = annotation as? StudentLocationMapAnnotation {
             let identifier = "pin"
             var view:MKPinAnnotationView
@@ -26,7 +26,7 @@ class MKPinAnnotationWrapperView: UIView {
                 view.canShowCallout = true
                 view.calloutOffset = CGPoint(x: -5, y:5)
                 let button = UIButton.buttonWithType(UIButtonType.DetailDisclosure) as! UIButton
-                button.addTarget(self, action: "handleInfoButton:", forControlEvents: UIControlEvents.TouchUpInside)
+                button.addTarget(target, action: "handleInfoButton:", forControlEvents: UIControlEvents.TouchUpInside)
                 let calloutView = MKPinAnnotationWrapperView(frame: CGRectMake(0, 0, button.frame.width, button.frame.height))
                 calloutView.addSubview(button)
                 calloutView.annotation = view

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import MapKit
 
-public class PostingViewController: UIViewController, StudentDataUpdateDelegate {
+public class PostingViewController: UIViewController, UITextFieldDelegate, StudentDataUpdateDelegate {
     
     @IBOutlet weak var bottomView: UIView!
     @IBOutlet weak var midView: UIView!
@@ -33,6 +33,7 @@ public class PostingViewController: UIViewController, StudentDataUpdateDelegate 
     
     public override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupTextField(self.textField)
         tapRecognizer = UITapGestureRecognizer(target: self, action: "handleSingleTap:")
         tapRecognizer?.numberOfTapsRequired = 1
         self.textField.tintColor = UIColor.whiteColor()
@@ -213,6 +214,17 @@ public class PostingViewController: UIViewController, StudentDataUpdateDelegate 
             }
         }
         self.alertView = nil
+    }
+    
+    func setupTextField(textField:UITextField) {
+        textField.delegate = self
+    }
+    
+    //MARK: - UITextFieldDelegate
+    
+    public func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder();
+        return true;
     }
     
     //MARK: - StudentDataUpdateDelegate
