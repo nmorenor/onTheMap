@@ -62,6 +62,7 @@ public class OnTheMapNavigationBarHelper : NSObject {
         UdacityClient.sharedInstance().userData = nil
         UdacityClient.sharedInstance().udacitySession = nil
         UdacityClient.sharedInstance().studentLocation = nil
+        ParseClient.sharedInstance().skip = 0
         self.students = nil
         
         self.delegate!.didLogout()
