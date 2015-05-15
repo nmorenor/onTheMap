@@ -54,6 +54,8 @@
 		6688FD711AF2CB27007E6B1E /* UdacityConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6688FD701AF2CB27007E6B1E /* UdacityConvenience.swift */; };
 		6688FD731AF2D7B8007E6B1E /* UdacitySession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6688FD721AF2D7B8007E6B1E /* UdacitySession.swift */; };
 		6688FD771AF3C471007E6B1E /* UdacityUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6688FD761AF3C471007E6B1E /* UdacityUserData.swift */; };
+		669AFB1D1B06365C00CB7CEB /* StudentListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669AFB1C1B06365C00CB7CEB /* StudentListDelegate.swift */; };
+		669AFB1F1B0636EC00CB7CEB /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669AFB1E1B0636EC00CB7CEB /* ListViewController.swift */; };
 		66A63B9E1B02B596002E9965 /* MKPinAnnotationWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A63B9D1B02B596002E9965 /* MKPinAnnotationWrapperView.swift */; };
 		66A63BA01B02B6B5002E9965 /* PostingMapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A63B9F1B02B6B5002E9965 /* PostingMapViewDelegate.swift */; };
 		66A63BA21B02C589002E9965 /* StudentDataUpdateDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A63BA11B02C589002E9965 /* StudentDataUpdateDelegate.swift */; };
@@ -146,6 +148,8 @@
 		6688FD701AF2CB27007E6B1E /* UdacityConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdacityConvenience.swift; sourceTree = "<group>"; };
 		6688FD721AF2D7B8007E6B1E /* UdacitySession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdacitySession.swift; sourceTree = "<group>"; };
 		6688FD761AF3C471007E6B1E /* UdacityUserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdacityUserData.swift; sourceTree = "<group>"; };
+		669AFB1C1B06365C00CB7CEB /* StudentListDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentListDelegate.swift; sourceTree = "<group>"; };
+		669AFB1E1B0636EC00CB7CEB /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		66A63B9D1B02B596002E9965 /* MKPinAnnotationWrapperView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKPinAnnotationWrapperView.swift; sourceTree = "<group>"; };
 		66A63B9F1B02B6B5002E9965 /* PostingMapViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostingMapViewDelegate.swift; sourceTree = "<group>"; };
 		66A63BA11B02C589002E9965 /* StudentDataUpdateDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentDataUpdateDelegate.swift; sourceTree = "<group>"; };
@@ -245,6 +249,8 @@
 				6644F0021B001D8600586998 /* OnTheMapActivityViewController.swift */,
 				66A63B9D1B02B596002E9965 /* MKPinAnnotationWrapperView.swift */,
 				66A63BA11B02C589002E9965 /* StudentDataUpdateDelegate.swift */,
+				669AFB1C1B06365C00CB7CEB /* StudentListDelegate.swift */,
+				669AFB1E1B0636EC00CB7CEB /* ListViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -710,6 +716,7 @@
 				660DD8F71AE2C94400BE5728 /* LoginViewController.swift in Sources */,
 				6688FD771AF3C471007E6B1E /* UdacityUserData.swift in Sources */,
 				6644F0031B001D8600586998 /* OnTheMapActivityViewController.swift in Sources */,
+				669AFB1F1B0636EC00CB7CEB /* ListViewController.swift in Sources */,
 				660DD9511AE2DB7100BE5728 /* ColorGradients.swift in Sources */,
 				661347291AFAEA5500EEBB1F /* StudentListViewController.swift in Sources */,
 				660DD8F51AE2C94400BE5728 /* AppDelegate.swift in Sources */,
@@ -723,6 +730,7 @@
 				66B51F211AF9C1C500085A35 /* OnTheMapNavigationBarHelper.swift in Sources */,
 				66F34B291AE5C8F500EAD5B0 /* BorderedTextField.swift in Sources */,
 				6644EFFA1AFC4F8A00586998 /* StudentDataDelegate.swift in Sources */,
+				669AFB1D1B06365C00CB7CEB /* StudentListDelegate.swift in Sources */,
 				666386EC1B043F4400EF5875 /* FlickerDelegate.swift in Sources */,
 				660DD94B1AE2D7F500BE5728 /* BorderedButton.swift in Sources */,
 				66A63B9E1B02B596002E9965 /* MKPinAnnotationWrapperView.swift in Sources */,
