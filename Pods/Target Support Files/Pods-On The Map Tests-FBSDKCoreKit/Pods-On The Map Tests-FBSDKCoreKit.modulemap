@@ -1,0 +1,6 @@
+framework module FBSDKCoreKit {
+  umbrella header "Pods-On The Map Tests-FBSDKCoreKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

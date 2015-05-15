@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-On The Map Tests-Bolts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-On The Map Tests-FBSDKCoreKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-On The Map Tests-FBSDKLoginKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-On The Map Tests-Nimble.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-On The Map Tests-Quick.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-On The Map Tests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-On The Map-Bolts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-On The Map-FBSDKCoreKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-On The Map-FBSDKLoginKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-On The Map.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>046728C1B40B22C32E0A41C3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>14F62846D30EF3EEDDAA340E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>40788E5A8CD610075156EE67</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5E7698C2C6B8311478C2A3E0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>62293317135CE243C6E72709</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8C525EAF0186E89D08B2D4F3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8DD04C0C0987C5222E67368C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A2F2F13553900CE5DB744864</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ABD756852B652FDEE598F216</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F2C5810704ADB8E6A792BBA5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
