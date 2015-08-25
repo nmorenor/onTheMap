@@ -4,12 +4,12 @@ On The Map is an application thinking on the online learning problem, somehow it
 
 The goal of this application is to get started with Networking API and how to parse JSON data from an http response, this project also incorporates some more advanced UI elements like a custom error notification and a progress alert view. We are also start looking at Cocoa Pods on how to integrate third party frameworks on the application and how to do some basic testing using Quick.
 
-![alt tag](https://raw.github.com/nmorenor/onTheMap/master/Meme/OnTheMapMain.png)
-![alt tag](https://raw.github.com/nmorenor/onTheMap/master/Meme/LoginFacebook.png)
-![alt tag](https://raw.github.com/nmorenor/onTheMap/master/Meme/LoginView.png)
-![alt tag](https://raw.github.com/nmorenor/onTheMap/master/Meme/LoginActivityView.png)
-![alt tag](https://raw.github.com/nmorenor/onTheMap/master/Meme/DropLocation.png)
-![alt tag](https://raw.github.com/nmorenor/onTheMap/master/Meme/FlickrView.png)
+![alt tag](https://raw.github.com/nmorenor/onTheMap/master/OnTheMapMain.png)
+![alt tag](https://raw.github.com/nmorenor/onTheMap/master/LoginFacebook.png)
+![alt tag](https://raw.github.com/nmorenor/onTheMap/master/LoginView.png)
+![alt tag](https://raw.github.com/nmorenor/onTheMap/master/LoginActivityView.png)
+![alt tag](https://raw.github.com/nmorenor/onTheMap/master/DropLocation.png)
+![alt tag](https://raw.github.com/nmorenor/onTheMap/master/FlickrView.png)
 
 ## License
 
