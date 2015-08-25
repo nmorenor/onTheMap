@@ -75,6 +75,15 @@
 		66F34B2D1AE5DCB500EAD5B0 /* OnTheMap_120-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F34B2C1AE5DCB500EAD5B0 /* OnTheMap_120-2.png */; };
 		66F34B321AE5E23C00EAD5B0 /* UdacityConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F34B311AE5E23C00EAD5B0 /* UdacityConstants.swift */; };
 		66F34B341AE5E25A00EAD5B0 /* UdacityClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F34B331AE5E25A00EAD5B0 /* UdacityClient.swift */; };
+		66F55AAA1B8BEC47005C2F49 /* FlickrView.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F55AA91B8BEC47005C2F49 /* FlickrView.png */; };
+		66F55AAC1B8BEC5D005C2F49 /* FlickrTableView.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F55AAB1B8BEC5D005C2F49 /* FlickrTableView.png */; };
+		66F55AAE1B8BEC6D005C2F49 /* StudentsTableView.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F55AAD1B8BEC6D005C2F49 /* StudentsTableView.png */; };
+		66F55AB01B8BEC81005C2F49 /* DropLocationView.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F55AAF1B8BEC81005C2F49 /* DropLocationView.png */; };
+		66F55AB21B8BECC4005C2F49 /* OnTheMapMain.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F55AB11B8BECC4005C2F49 /* OnTheMapMain.png */; };
+		66F55AB41B8BECEF005C2F49 /* LoginFacebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F55AB31B8BECEF005C2F49 /* LoginFacebook.png */; };
+		66F55AB61B8BECF6005C2F49 /* LoginView.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F55AB51B8BECF6005C2F49 /* LoginView.png */; };
+		66F55AB81B8BED07005C2F49 /* LoginActivityView.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F55AB71B8BED07005C2F49 /* LoginActivityView.png */; };
+		66F55ABA1B8BED64005C2F49 /* readme.md in Sources */ = {isa = PBXBuildFile; fileRef = 66F55AB91B8BED64005C2F49 /* readme.md */; };
 		7984CB6912A58104D90D856B /* Pods_On_The_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A79F08A4A4EB76ECE9247A /* Pods_On_The_Map.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -170,6 +179,15 @@
 		66F34B2C1AE5DCB500EAD5B0 /* OnTheMap_120-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "OnTheMap_120-2.png"; path = "../../Downloads/on the map assets/OnTheMap_120-2.png"; sourceTree = "<group>"; };
 		66F34B311AE5E23C00EAD5B0 /* UdacityConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdacityConstants.swift; sourceTree = "<group>"; };
 		66F34B331AE5E25A00EAD5B0 /* UdacityClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdacityClient.swift; sourceTree = "<group>"; };
+		66F55AA91B8BEC47005C2F49 /* FlickrView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FlickrView.png; sourceTree = "<group>"; };
+		66F55AAB1B8BEC5D005C2F49 /* FlickrTableView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FlickrTableView.png; sourceTree = "<group>"; };
+		66F55AAD1B8BEC6D005C2F49 /* StudentsTableView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StudentsTableView.png; sourceTree = "<group>"; };
+		66F55AAF1B8BEC81005C2F49 /* DropLocationView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DropLocationView.png; sourceTree = "<group>"; };
+		66F55AB11B8BECC4005C2F49 /* OnTheMapMain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OnTheMapMain.png; sourceTree = "<group>"; };
+		66F55AB31B8BECEF005C2F49 /* LoginFacebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginFacebook.png; sourceTree = "<group>"; };
+		66F55AB51B8BECF6005C2F49 /* LoginView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginView.png; sourceTree = "<group>"; };
+		66F55AB71B8BED07005C2F49 /* LoginActivityView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginActivityView.png; sourceTree = "<group>"; };
+		66F55AB91B8BED64005C2F49 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		7B311C388C1E64CD94FFE1B2 /* Pods-On The Map.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-On The Map.debug.xcconfig"; path = "Pods/Target Support Files/Pods-On The Map/Pods-On The Map.debug.xcconfig"; sourceTree = "<group>"; };
 		83659FFB961DF1E4BD7D4107 /* Pods_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A79F08A4A4EB76ECE9247A /* Pods_On_The_Map.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_On_The_Map.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,6 +221,7 @@
 		660DD8E61AE2C94300BE5728 = {
 			isa = PBXGroup;
 			children = (
+				66F55AB91B8BED64005C2F49 /* readme.md */,
 				660DD94C1AE2DAA600BE5728 /* QuartzCore.framework */,
 				660DD8F11AE2C94300BE5728 /* On The Map */,
 				6655929C1AF1C932000538E7 /* On The Map Tests */,
@@ -271,6 +290,14 @@
 		660DD91C1AE2D14500BE5728 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				66F55AB71B8BED07005C2F49 /* LoginActivityView.png */,
+				66F55AB51B8BECF6005C2F49 /* LoginView.png */,
+				66F55AB31B8BECEF005C2F49 /* LoginFacebook.png */,
+				66F55AB11B8BECC4005C2F49 /* OnTheMapMain.png */,
+				66F55AAF1B8BEC81005C2F49 /* DropLocationView.png */,
+				66F55AAD1B8BEC6D005C2F49 /* StudentsTableView.png */,
+				66F55AA91B8BEC47005C2F49 /* FlickrView.png */,
+				66F55AAB1B8BEC5D005C2F49 /* FlickrTableView.png */,
 				660DD9161AE2CD8200BE5728 /* Roboto-Medium.ttf */,
 				660DD9171AE2CD8200BE5728 /* Roboto-Regular.ttf */,
 				660DD9181AE2CD8200BE5728 /* Roboto-Thin.ttf */,
@@ -580,10 +607,12 @@
 				660DD9461AE2D25F00BE5728 /* LaunchImage-1.png in Resources */,
 				660DD9341AE2D17F00BE5728 /* OnTheMap_87.png in Resources */,
 				660DD9371AE2D17F00BE5728 /* OnTheMap_180.png in Resources */,
+				66F55AB41B8BECEF005C2F49 /* LoginFacebook.png in Resources */,
 				660DD91B1AE2CE4100BE5728 /* Roboto-Thin.ttf in Resources */,
 				660DD9331AE2D17F00BE5728 /* OnTheMap_80.png in Resources */,
 				660DD9471AE2D25F00BE5728 /* LaunchImage.png in Resources */,
 				660DD8FA1AE2C94400BE5728 /* Main.storyboard in Resources */,
+				66F55AAA1B8BEC47005C2F49 /* FlickrView.png in Resources */,
 				660DD9431AE2D25500BE5728 /* LaunchImageLarge.png in Resources */,
 				660DD9361AE2D17F00BE5728 /* OnTheMap_152.png in Resources */,
 				660DD9311AE2D17F00BE5728 /* OnTheMap_58.png in Resources */,
@@ -591,10 +620,16 @@
 				660DD9301AE2D17F00BE5728 /* OnTheMap_40.png in Resources */,
 				660DD93B1AE2D17F00BE5728 /* udacity.pdf in Resources */,
 				660DD92D1AE2D17F00BE5728 /* list.pdf in Resources */,
+				66F55AB61B8BECF6005C2F49 /* LoginView.png in Resources */,
+				66F55AB01B8BEC81005C2F49 /* DropLocationView.png in Resources */,
 				660DD9351AE2D17F00BE5728 /* OnTheMap_120.png in Resources */,
 				660DD93A1AE2D17F00BE5728 /* pin.pdf in Resources */,
+				66F55AB81B8BED07005C2F49 /* LoginActivityView.png in Resources */,
+				66F55AB21B8BECC4005C2F49 /* OnTheMapMain.png in Resources */,
+				66F55AAE1B8BEC6D005C2F49 /* StudentsTableView.png in Resources */,
 				660DD92E1AE2D17F00BE5728 /* map.pdf in Resources */,
 				660DD8FF1AE2C94400BE5728 /* LaunchScreen.xib in Resources */,
+				66F55AAC1B8BEC5D005C2F49 /* FlickrTableView.png in Resources */,
 				660DD9321AE2D17F00BE5728 /* OnTheMap_76.png in Resources */,
 				660DD9381AE2D17F00BE5728 /* OnTheMap_512.png in Resources */,
 				660DD8FC1AE2C94400BE5728 /* Images.xcassets in Resources */,
@@ -724,6 +759,7 @@
 				66A63BA01B02B6B5002E9965 /* PostingMapViewDelegate.swift in Sources */,
 				666386E31B04344900EF5875 /* FlickerClient.swift in Sources */,
 				666386E71B04362800EF5875 /* FlickerConvenience.swift in Sources */,
+				66F55ABA1B8BED64005C2F49 /* readme.md in Sources */,
 				666386E51B04351B00EF5875 /* FlickerConstants.swift in Sources */,
 				6644EFFC1AFD85B700586998 /* StudentLocationMapAnnotation.swift in Sources */,
 				6688FD711AF2CB27007E6B1E /* UdacityConvenience.swift in Sources */,
