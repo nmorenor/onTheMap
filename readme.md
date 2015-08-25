@@ -8,7 +8,8 @@ The goal of this application is to get started with Networking API and how to pa
 ![alt tag](https://raw.github.com/nmorenor/onTheMap/master/LoginFacebook.png)
 ![alt tag](https://raw.github.com/nmorenor/onTheMap/master/LoginView.png)
 ![alt tag](https://raw.github.com/nmorenor/onTheMap/master/LoginActivityView.png)
-![alt tag](https://raw.github.com/nmorenor/onTheMap/master/DropLocation.png)
+![alt tag](https://raw.github.com/nmorenor/onTheMap/master/StudentsTableView.png)
+![alt tag](https://raw.github.com/nmorenor/onTheMap/master/DropLocationView.png)
 ![alt tag](https://raw.github.com/nmorenor/onTheMap/master/FlickrView.png)
 
 ## License
