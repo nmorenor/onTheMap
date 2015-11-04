@@ -12,7 +12,7 @@ import UIKit
 
 extension MapViewController: MKMapViewDelegate {
     
-    public func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
+    public func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
         let tapRecognizer:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "handleAnnotationTap:")
         return MKPinAnnotationWrapperView.createAnnotation(self, mapView:mapView, viewForAnnotation: annotation, tapRecognizer: tapRecognizer)
     }

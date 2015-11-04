@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5BFDA1CA09BD44F55A90DCBB /* Pods_On_The_Map_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8769BCCFFC6D29C08185F5 /* Pods_On_The_Map_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		5BFDA1CA09BD44F55A90DCBB /* Pods_On_The_Map_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8769BCCFFC6D29C08185F5 /* Pods_On_The_Map_Tests.framework */; };
 		660DD8F51AE2C94400BE5728 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660DD8F41AE2C94400BE5728 /* AppDelegate.swift */; };
 		660DD8F71AE2C94400BE5728 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660DD8F61AE2C94400BE5728 /* LoginViewController.swift */; };
 		660DD8FA1AE2C94400BE5728 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 660DD8F81AE2C94400BE5728 /* Main.storyboard */; };
@@ -84,7 +84,7 @@
 		66F55AB61B8BECF6005C2F49 /* LoginView.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F55AB51B8BECF6005C2F49 /* LoginView.png */; };
 		66F55AB81B8BED07005C2F49 /* LoginActivityView.png in Resources */ = {isa = PBXBuildFile; fileRef = 66F55AB71B8BED07005C2F49 /* LoginActivityView.png */; };
 		66F55ABA1B8BED64005C2F49 /* readme.md in Sources */ = {isa = PBXBuildFile; fileRef = 66F55AB91B8BED64005C2F49 /* readme.md */; };
-		7984CB6912A58104D90D856B /* Pods_On_The_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A79F08A4A4EB76ECE9247A /* Pods_On_The_Map.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		7984CB6912A58104D90D856B /* Pods_On_The_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A79F08A4A4EB76ECE9247A /* Pods_On_The_Map.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -564,7 +564,9 @@
 		660DD8E71AE2C94300BE5728 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Ignacio Moreno";
 				TargetAttributes = {
 					660DD8EE1AE2C94300BE5728 = {
@@ -846,6 +848,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -918,6 +921,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ignacio-Moreno.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};
@@ -938,6 +942,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ignacio-Moreno.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};
@@ -961,6 +966,7 @@
 				INFOPLIST_FILE = "On The Map Tests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ignacio-Moreno.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/On The Map.app/On The Map";
 			};
@@ -980,6 +986,7 @@
 				INFOPLIST_FILE = "On The Map Tests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ignacio-Moreno.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/On The Map.app/On The Map";
 			};

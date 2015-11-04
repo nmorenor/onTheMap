@@ -43,7 +43,7 @@ public class OnTheMapAlertViewController: UIViewController {
         }
     }
     
-    required public init(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("NSCoding not supported")
     }
     
@@ -66,7 +66,7 @@ public class OnTheMapAlertViewController: UIViewController {
         self.viewHeight = (self.retryButton == nil) ? baseHeight + 8 : baseHeight + 33
         
         var yPos:CGFloat = 0.0
-        var contentWidth:CGFloat = self.viewWidth!
+        let contentWidth:CGFloat = self.viewWidth!
         
         let titleString = messageLabel.text! as NSString
         let titleAttr = [NSFontAttributeName:messageLabel.font]
@@ -103,7 +103,7 @@ public class OnTheMapAlertViewController: UIViewController {
         self.rootViewController.view.addSubview(view)
         
         self.view.backgroundColor = UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 0.0)
-        var textColor = UIColor.whiteColor()
+        let textColor = UIColor.whiteColor()
         
         let size = UIScreen.mainScreen().bounds.size
         self.viewWidth = size.width
@@ -148,7 +148,7 @@ public class OnTheMapAlertViewController: UIViewController {
         })
         self.containerView.frame.origin.x = self.rootViewController.view.center.x
         self.containerView.center.y = -500
-        UIView.animateWithDuration(0.5, delay: 0.05, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.5, options: nil, animations: {
+        UIView.animateWithDuration(0.5, delay: 0.05, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.5, options: [], animations: {
             self.containerView.center = self.rootViewController.view.center
             }, completion: { finished in
                 
@@ -159,7 +159,7 @@ public class OnTheMapAlertViewController: UIViewController {
     }
     
     public func closeView(withCallback:Bool) {
-        UIView.animateWithDuration(0.3, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.5, options: nil, animations: {
+        UIView.animateWithDuration(0.3, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.5, options: [], animations: {
             self.containerView.center.y = -(self.viewHeight! + 10)
             }, completion: { finished in
                 UIView.animateWithDuration(0.1, animations: {

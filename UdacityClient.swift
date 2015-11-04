@@ -34,7 +34,7 @@ public class UdacityClient : NSObject, HTTPClientProtocol {
     }
     
     public func processJsonBody(jsonBody: [String : AnyObject]) -> [String : AnyObject] {
-        var mutableJsonBody = [
+        let mutableJsonBody = [
             UdacityClient.ParameterKeys.Udacity : jsonBody
         ]
         return mutableJsonBody

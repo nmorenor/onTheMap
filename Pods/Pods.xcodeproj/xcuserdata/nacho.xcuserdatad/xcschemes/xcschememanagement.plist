@@ -4,27 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-On The Map Tests-Bolts.xcscheme</key>
+		<key>Bolts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-On The Map Tests-FBSDKCoreKit.xcscheme</key>
+		<key>FBSDKCoreKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-On The Map Tests-FBSDKLoginKit.xcscheme</key>
+		<key>FBSDKLoginKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-On The Map Tests-Nimble.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-On The Map Tests-Quick.xcscheme</key>
+		<key>Nimble.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -34,22 +29,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-On The Map-Bolts.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-On The Map-FBSDKCoreKit.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-On The Map-FBSDKLoginKit.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-On The Map.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Quick.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -57,52 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>046728C1B40B22C32E0A41C3</key>
+		<key>2E2F0D1AD1670F3BE2DFA16E6CA710C0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>14F62846D30EF3EEDDAA340E</key>
+		<key>31188CA94702E931388042B7231B9871</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>40788E5A8CD610075156EE67</key>
+		<key>57ADC05E440A960212657DE6DA1FEDD5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5E7698C2C6B8311478C2A3E0</key>
+		<key>5D69761C2CD2A1E5C013537B29CAB4CF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>62293317135CE243C6E72709</key>
+		<key>939039D052C02D2EF650A966F5EC8A19</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8C525EAF0186E89D08B2D4F3</key>
+		<key>C5DB5104FED3C10F78978AFC810982B9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8DD04C0C0987C5222E67368C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A2F2F13553900CE5DB744864</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>ABD756852B652FDEE598F216</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F2C5810704ADB8E6A792BBA5</key>
+		<key>F5ACF367AE3BD7A7F2AF2D430901DF7B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

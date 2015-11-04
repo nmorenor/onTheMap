@@ -36,12 +36,12 @@ extension UdacityClient {
     }
     
     public func getSessionID(user:String, password:String, completionHandler: (success:Bool, session:UdacitySession?, errorString:String?) -> Void) -> NSURLSessionDataTask {
-        var credentials = [
+        let credentials = [
             UdacityClient.ParameterKeys.UserName : user,
             UdacityClient.ParameterKeys.Password : password
         ]
         let task = self.httpClient.taskForPOSTMethod(UdacityClient.Methods.Session, parameters: [String:AnyObject](), jsonBody: credentials) { JSONResult, error in
-            if let error = error {
+            if let _ = error {
                 completionHandler(success: false, session: nil, errorString: "Login Failed")
             } else {
                 self.handleSessionResult(JSONResult, facebookSession:false , error: error, completionHandler: completionHandler)
@@ -51,11 +51,11 @@ extension UdacityClient {
     }
     
     public func getSessionID(token:String, completionHandler: (success:Bool, session: UdacitySession?, errorString:String?) -> Void) -> NSURLSessionDataTask {
-        var credentials = [
+        _ = [
             UdacityClient.FacebookKeys.FacebookMobile: [UdacityClient.FacebookKeys.AccessToken : token]
         ]
         let task = self.httpClient.taskForGETMethod(UdacityClient.Methods.Session, parameters: [String:AnyObject]()) { JSONResult, error in
-            if let error = error {
+            if let _ = error {
                 completionHandler(success: false, session: nil, errorString: "Login Failed (Facebook)")
             } else {
                 self.handleSessionResult(JSONResult, facebookSession:true, error: error, completionHandler: completionHandler)
@@ -91,9 +91,9 @@ extension UdacityClient {
     }
     
     public func getUserData(userID:Int, completionHandler: (success:Bool, userData:UdacityUserData?, errorString:String?) -> Void) -> NSURLSessionDataTask {
-        var mutableMethod = HTTPClient.substituteKeyInMethod(UdacityClient.Methods.Users, key: UdacityClient.URLKeys.UserID, value: "\(userID)")!
+        let mutableMethod = HTTPClient.substituteKeyInMethod(UdacityClient.Methods.Users, key: UdacityClient.URLKeys.UserID, value: "\(userID)")!
         let task = self.httpClient.taskForGETMethod(mutableMethod, parameters: [String:AnyObject]()) { JSONResult, error in
-            if let error = error {
+            if let _ = error {
                 completionHandler(success: false, userData: nil, errorString: "User Data Request Error")
             } else {
                 if let user = JSONResult.valueForKey(UdacityClient.JSONResponseKeys.User) as? [String:AnyObject] {

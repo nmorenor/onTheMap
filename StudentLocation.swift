@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class StudentLocation : NSObject, Hashable, Equatable {
+public class StudentLocation : NSObject {
     
     public var createdAt:NSDate?
     public var firstName:String?
@@ -75,8 +75,8 @@ public class StudentLocation : NSObject, Hashable, Equatable {
     }
     
     public func getFullName() -> String {
-        if let firstName = self.firstName {
-            if let lastName = self.lastName {
+        if let _ = self.firstName {
+            if let _ = self.lastName {
                 return "\(self.firstName!) \(self.lastName!)"
             } else {
                 return self.firstName!

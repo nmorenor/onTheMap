@@ -70,13 +70,13 @@ public class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, UI
 
     @IBAction func login(sender: UIButton) {
         
-        if (emailTextField.text.isEmpty || passwordTextField.text.isEmpty) {
+        if (emailTextField.text!.isEmpty || passwordTextField.text!.isEmpty) {
             self.setupNewAlert("Email and password can not be empty", retry:false)
             return
         }
         self.activityView = OnTheMapActivityViewController()
         self.activityView?.show(self, text: "Processing...")
-        UdacityClient.sharedInstance().getSessionIDWithDelegate(self.emailTextField.text, password: self.passwordTextField.text, udacitySessionDelegate: self.sessionDelegate!, button: self.loginButton)
+        UdacityClient.sharedInstance().getSessionIDWithDelegate(self.emailTextField.text!, password: self.passwordTextField.text!, udacitySessionDelegate: self.sessionDelegate!, button: self.loginButton)
         
         self.loginButton.enabled = false
     }
@@ -140,7 +140,7 @@ public class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, UI
     
     public func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
         if ((error) == nil) {
-            if let result = result {
+            if let _ = result {
                 if let facebookToken = FBSDKAccessToken.currentAccessToken() {
                     if let token = facebookToken.tokenString {
                         UdacityClient.sharedInstance().getSessionIDWithDelegate(token, udacitySessionDelegate: self.sessionDelegate!, button: self.facebookLoginButton)

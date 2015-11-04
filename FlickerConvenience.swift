@@ -17,7 +17,7 @@ extension FlickerClient {
     }
     
     public func getImageFromFlickerSearch(student:StudentLocation, completionHandler:(success:Bool, result:NSURL?, errorString:String?) -> Void) {
-        var parameters = [
+        let parameters = [
             FlickerClient.ParameterKeys.METHOD : FlickerClient.Methods.SEARCH,
             FlickerClient.ParameterKeys.API_KEY : FLICKR_API_KEY,
             FlickerClient.ParameterKeys.BBOX : self.createBoundingBoxString(student),
@@ -27,7 +27,7 @@ extension FlickerClient {
             FlickerClient.ParameterKeys.NO_JSON_CALLBACK : FlickerClient.Constants.NO_JSON_CALLBACK
         ]
         self.httpClient?.taskForGETMethod("", parameters: parameters) { JSONResult, error in
-            if let error = error {
+            if let _ = error {
                 completionHandler(success: false, result: nil, errorString: "Can not find photos for location")
             } else  {
                 if let photosDictionary = JSONResult.valueForKey("photos") as? [String:AnyObject] {
@@ -53,7 +53,7 @@ extension FlickerClient {
         var withPageDictionary = methodArguments
         withPageDictionary["page"] = pageNumber
         self.httpClient?.taskForGETMethod("", parameters: withPageDictionary) { JSONResult, error in
-            if let error = error {
+            if let _ = error {
                 completionHandler(success: false, result: nil, errorString: "Can not find photos for location")
             } else {
                 if let photosDictionary = JSONResult.valueForKey("photos") as? [String:AnyObject] {
@@ -68,7 +68,7 @@ extension FlickerClient {
                             let randomPhotoIndex = Int(arc4random_uniform(UInt32(photosArray.count)))
                             let photoDictionary = photosArray[randomPhotoIndex] as [String: AnyObject]
                         
-                            let photoTitle = photoDictionary["title"] as? String
+                            _ = photoDictionary["title"] as? String
                             let imageUrlString = photoDictionary["url_m"] as? String
                             if let imageURL = NSURL(string: imageUrlString!) {
                                 completionHandler(success: true, result: imageURL, errorString: nil)

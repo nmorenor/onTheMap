@@ -25,7 +25,7 @@ class MKPinAnnotationWrapperView: UIView {
                 view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
                 view.canShowCallout = true
                 view.calloutOffset = CGPoint(x: -5, y:5)
-                let button = UIButton.buttonWithType(UIButtonType.DetailDisclosure) as! UIButton
+                let button = UIButton(type: UIButtonType.DetailDisclosure)
                 button.addTarget(target, action: "handleInfoButton:", forControlEvents: UIControlEvents.TouchUpInside)
                 let calloutView = MKPinAnnotationWrapperView(frame: CGRectMake(0, 0, button.frame.width, button.frame.height))
                 calloutView.addSubview(button)

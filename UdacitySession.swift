@@ -23,7 +23,7 @@ public struct UdacitySession {
             self.expiration = dateFormatter.dateFromString(date)
         }
         if let uid = account?[UdacityClient.UdacitySessionKeys.AccountID] as? String {
-            self.userID = uid.toInt()
+            self.userID = Int(uid)
         }
         self.facebookSession = facebookSession
     }

@@ -112,10 +112,10 @@ public class ListViewController:UIViewController, StudentDataDelegate, UITableVi
         let cellReuseIdentifier = delegate!.getTableCellReuseIdentifier()
         
         let student = OnTheMapNavigationBarHelper.sharedInstance().students![indexPath.row]
-        var cell = tableView.dequeueReusableCellWithIdentifier(cellReuseIdentifier) as! UITableViewCell
-        delegate?.setupTableCell(student, tableCell: cell)
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellReuseIdentifier)
+        delegate?.setupTableCell(student, tableCell: cell!)
         
-        return cell
+        return cell!
     }
     
     public func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

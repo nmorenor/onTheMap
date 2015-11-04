@@ -11,8 +11,8 @@ import MapKit
 
 public class StudentLocationMapAnnotation: NSObject, MKAnnotation {
     
-    public let title:String
-    public let subtitle:String
+    public let title:String?
+    public let subtitle:String?
     public let coordinate:CLLocationCoordinate2D
     let studentLocation:StudentLocation
     

@@ -173,7 +173,7 @@ class UdacityClientTests: QuickSpec {
                 
                 var responseData:ResponseData? = nil
                 let uniqueKey = "\(udacityClient.userData!.id!)"
-                var task = parseClient.searchStudentByKey(uniqueKey) { success, studentLocation, errorString in
+                let task = parseClient.searchStudentByKey(uniqueKey) { success, studentLocation, errorString in
                     responseData = ResponseData(success: success, result: studentLocation, error: errorString)
                 }
                 
@@ -203,7 +203,7 @@ class UdacityClientTests: QuickSpec {
                     
                 } else {
                     var createStudentResponseData:ResponseData!
-                    var params:[String:AnyObject]
+                    var _:[String:AnyObject]
                     
                     student = StudentLocation(uniquekey: uniqueKey)
                     student!.firstName = "Ignacio"
@@ -227,7 +227,7 @@ class UdacityClientTests: QuickSpec {
                     
                     //search it again
                     responseData = nil
-                    var task = parseClient.searchStudentByKey(uniqueKey) { success, studentLocation, errorString in
+                    _ = parseClient.searchStudentByKey(uniqueKey) { success, studentLocation, errorString in
                         responseData = ResponseData(success: success, result: studentLocation, error: errorString)
                     }
                     

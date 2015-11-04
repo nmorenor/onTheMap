@@ -20,7 +20,7 @@ public struct UdacityUserData {
         self.firstName = dict[UdacityClient.UdacityUserKeys.FirstName] as? String
         self.lastName = dict[UdacityClient.UdacityUserKeys.LastName] as? String
         if let key = dict[UdacityClient.UdacityUserKeys.UserID] as? String {
-            self.id = key.toInt()
+            self.id = Int(key)
         }
         self.nickName = dict[UdacityClient.UdacityUserKeys.NickName] as? String
         if let image = dict[UdacityClient.UdacityUserKeys.ImageURL] as? String {

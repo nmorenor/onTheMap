@@ -62,8 +62,8 @@ public class PostingViewController: UIViewController, UITextFieldDelegate, Stude
     
     func findOntTheMap(sender: UIButton) {
         if (self.showMap) {
-            if (self.regex.test(self.textField!.text)) {
-                UdacityClient.sharedInstance().studentLocation?.mediaURL = NSURL(string: self.textField!.text)!
+            if (self.regex.test(self.textField!.text!)) {
+                UdacityClient.sharedInstance().studentLocation?.mediaURL = NSURL(string: self.textField!.text!)!
                 ParseClient.sharedInstance().postStudentLocationWithDelegate(UdacityClient.sharedInstance().studentLocation!, delegate: self)
                 self.activityView = OnTheMapActivityViewController()
                 self.activityView?.show(self, text: "Processing...")
@@ -76,16 +76,16 @@ public class PostingViewController: UIViewController, UITextFieldDelegate, Stude
     }
     
     func performGeoLocation() {
-        var geod:CLGeocoder = CLGeocoder()
+        let geod:CLGeocoder = CLGeocoder()
         self.activityView = OnTheMapActivityViewController()
         self.activityView?.show(self, text: "Processing...")
-        geod.geocodeAddressString(textField.text) { placemark, error in
+        geod.geocodeAddressString(textField.text!) { placemark, error in
             if (error == nil) {
-                if let placemarks = placemark as? [CLPlacemark] {
+                if let placemarks = placemark {
                     for next in placemarks {
                         let location = next.location
-                        UdacityClient.sharedInstance().studentLocation?.longitude = location.coordinate.longitude
-                        UdacityClient.sharedInstance().studentLocation?.latitude = location.coordinate.latitude
+                        UdacityClient.sharedInstance().studentLocation?.longitude = location!.coordinate.longitude
+                        UdacityClient.sharedInstance().studentLocation?.latitude = location!.coordinate.latitude
                         UdacityClient.sharedInstance().studentLocation?.mapString = self.textField!.text
                     }
                 }
@@ -135,7 +135,7 @@ public class PostingViewController: UIViewController, UITextFieldDelegate, Stude
     
     func calculateButtonLabelRect(label:String, font:UIFont) -> CGRect {
         let size = UIScreen.mainScreen().bounds.size
-        var labelString = label as NSString
+        let labelString = label as NSString
         let labelAttr = [NSFontAttributeName:font]
         let labelSize = CGSize(width: size.width, height: 36)
         let labelRect:CGRect = labelString.boundingRectWithSize(labelSize, options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: labelAttr, context: nil)
@@ -143,15 +143,15 @@ public class PostingViewController: UIViewController, UITextFieldDelegate, Stude
     }
     
     func layoutForMap() {
-        var topHeight = self.topView.frame.height
-        var targetMidHeight = self.midView.frame.height + 25
+        _ = self.topView.frame.height
+        let targetMidHeight = self.midView.frame.height + 25
         let size = UIScreen.mainScreen().bounds.size
-        var targetBottomHeight = size.height - targetMidHeight
+        let targetBottomHeight = size.height - targetMidHeight
         self.button.setTitle("Submit", forState: UIControlState.Normal)
         let labelRect = calculateButtonLabelRect(self.button.titleLabel!.text!, font:self.button.titleLabel!.font!)
         let labelLinkRect = calculateButtonLabelRect("Test Media URL", font:self.button.titleLabel!.font!)
-        var targetButtonYPos = (targetMidHeight + targetBottomHeight) - ((targetBottomHeight / 4) - (ceil(labelRect.size.height + 8) / 2))
-        var targetLinkButtonYPos = ((targetMidHeight - 25) - (ceil(labelLinkRect.size.height + 8) / 2))
+        let targetButtonYPos = (targetMidHeight + targetBottomHeight) - ((targetBottomHeight / 4) - (ceil(labelRect.size.height + 8) / 2))
+        let targetLinkButtonYPos = ((targetMidHeight - 25) - (ceil(labelLinkRect.size.height + 8) / 2))
         if (self.map == nil) {
             
             self.button.removeFromSuperview()
@@ -165,7 +165,7 @@ public class PostingViewController: UIViewController, UITextFieldDelegate, Stude
             self.configureButton(self.testLinkButton!, title:"Test Media URL", selector:"testMediaURL:");
             self.view.addSubview(self.testLinkButton!)
         
-            UIView.animateWithDuration(0.5, delay: 0.05, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.5, options: nil, animations: { finished in
+            UIView.animateWithDuration(0.5, delay: 0.05, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.5, options: [], animations: { finished in
             
                 self.midView.frame = CGRectMake(0, 0, size.width, targetMidHeight)
                 self.bottomView.frame = CGRectMake(0, targetMidHeight, size.width, targetBottomHeight)
@@ -175,7 +175,7 @@ public class PostingViewController: UIViewController, UITextFieldDelegate, Stude
                 self.testLinkButton!.frame = CGRect(x: (size.width - (labelLinkRect.width + 25)) / 2 , y: targetLinkButtonYPos - (ceil(labelLinkRect.size.height + 8) / 2), width: labelLinkRect.width + 25, height: ceil(labelLinkRect.size.height + 8))
             }, completion: { finished in
                     self.map!.removeAnnotations(self.map!.annotations)
-                    self.map!.addAnnotation(self.annotation)
+                    self.map!.addAnnotation(self.annotation!)
             })
         } else {
             self.midView.frame = CGRectMake(0, 0, size.width, targetMidHeight)
@@ -187,8 +187,8 @@ public class PostingViewController: UIViewController, UITextFieldDelegate, Stude
     }
     
     func testMediaURL(button:UIButton) {
-        if (self.regex.test(self.textField!.text)) {
-            UIApplication.sharedApplication().openURL(NSURL(string: self.textField!.text)!)
+        if (self.regex.test(self.textField!.text!)) {
+            UIApplication.sharedApplication().openURL(NSURL(string: self.textField!.text!)!)
         } else {
             self.setupNewAlert("Invalid URL please verify it", retry: false)
         }
