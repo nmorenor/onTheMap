@@ -125,21 +125,11 @@ public class HTTPClient: NSObject {
     
     /* Helper: Given raw JSON, return a usable Foundation object */
     class func parseJSONWithCompletionHandler(data: NSData, completionHandler: (result: AnyObject!, error: NSError?) -> Void) {
-        
-        var parsingError: NSError? = nil
-        
-        let parsedResult: AnyObject?
         do {
-            parsedResult = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments)
-        } catch let error as NSError {
-            parsingError = error
-            parsedResult = nil
-        }
-        
-        if let error = parsingError {
-            completionHandler(result: nil, error: error)
-        } else {
+            let parsedResult = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments)
             completionHandler(result: parsedResult, error: nil)
+        } catch {
+            completionHandler(result: nil, error: error as NSError)
         }
     }
     
